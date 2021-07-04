@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./assets/icon_rounded.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div style={{ width: "50%", textAlign: "center" }}>
+        <img
+          style={{ height: 117, width: 117, marginTop: "30%" }}
+          src={logo}
+          alt="Logo"
+        />
+        <p></p>
+        <div style={{marginTop: '5%',}}>
+        <span
+          style={{
+            fontSize: 42,
+            color: "rgba(182, 183, 255, 1)",
+            fontWeight: "500",
+            textAlign: "center",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Kno-logic{" "}
+        </span>
+        <span
+          style={{
+            fontSize: 42,
+            color: "rgba(255, 255, 255, 0.8)",
+            fontWeight: "500",
+            textAlign: "center",
+          }}
+        >
+          delivers a daily digest of curated, diverse articles that makes it
+          easier to stay a lifelong learner.
+        </span>
+        </div>
+        
+      </div>
     </div>
   );
 }
