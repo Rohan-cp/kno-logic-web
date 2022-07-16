@@ -47,30 +47,31 @@ function App() {
             easier to stay a lifelong learner.
           </p>
         </div>
-        <div style={{display: "flex", justifyContent: 'space-between'}} >
-        <DefaultButton
-          onClick={() => {
-            alert();
-          }}
-        >
-          <p style={{ fontSize: 19, fontWeight: 'lighter' }}>
-            Download for{" "}
-            <span style={{ fontWeight: "bold", color: "black" }}>iOS</span>
-          </p>
-        </DefaultButton>
-        <DefaultButton
-          onClick={() => {
-            alert();
-          }}
-        >
-          <p style={{ fontSize: 19, fontWeight: 'lighter' }}>
-            Download for{" "}
-            <span style={{ fontWeight: "bold", color: "black" }}>Android</span>
-          </p>
-        </DefaultButton>
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <DefaultButton
+            onClick={() => {
+              alert();
+            }}
+          >
+            <span style={{ fontSize: 17, fontWeight: 100 }}>
+              Download for{" "}
+              <span style={{ fontWeight: "bold" }}>iOS</span>
+            </span>
+          </DefaultButton>
+          <DefaultButton
+            onClick={() => {
+              alert();
+            }}
+          >
+            <p style={{ fontSize: 17, fontWeight: 100 }}>
+              Download for{" "}
+              <span style={{ fontWeight: "bold"}}>
+                Android
+              </span>
+            </p>
+          </DefaultButton>
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 }

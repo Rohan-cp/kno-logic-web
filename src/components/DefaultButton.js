@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DefaultButton = (props) => {
+  const [bgColor, setBgColour] = useState("black");
+  const [textColor, setTextColor] = useState("white");
+  const [borderColor, setBorderColor] = useState("white");
   return (
     <button
       onClick={props.onClick}
       style={{
-        backgroundColor: "#5CA0FF",
-        border: "none",
-        color: "black",
+        backgroundColor: bgColor,
+        color: textColor,
         borderRadius: "25px",
+        borderWidth: 1,
+        borderColor: borderColor,
+        borderStyle: "solid",
         width: 208,
-        height: 58
+        height: 58,
+        cursor: "pointer",
+      }}
+      onMouseEnter={() => {
+        setBgColour("#6E44FF");
+        setTextColor("white");
+        setBorderColor("#6E44FF");
+      }}
+      onMouseLeave={() => {
+        setBgColour("black");
+        setTextColor("white");
+        setBorderColor("white");
       }}
     >
       {props.children}
