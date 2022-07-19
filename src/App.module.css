@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgContainer {
+  width: "50%";
+  height: "100%";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image {
+  flex-shrink: 0;
+}
+
+p {
+  font-size: 17;
+  font-weight: 100;
+}

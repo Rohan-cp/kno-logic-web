@@ -11,7 +11,7 @@ const DefaultButton = (props) => {
         backgroundColor: bgColor,
         color: textColor,
         borderRadius: "25px",
-        borderWidth: 1,
+        borderWidth: 2,
         borderColor: borderColor,
         borderStyle: "solid",
         width: 208,

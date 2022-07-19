@@ -1,9 +1,11 @@
 import logo from "./assets/icon_rounded.png";
 import DefaultButton from "./components/DefaultButton";
+import styles from "./App.module.css";
+import mockup from "./assets/mockup.png";
 
 function App() {
   return (
-    <div>
+    <div className={styles.container}>
       <div style={{ width: "50%" }}>
         <img
           style={{
@@ -47,16 +49,15 @@ function App() {
             easier to stay a lifelong learner.
           </p>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <div className={styles.buttonContainer}>
           <DefaultButton
             onClick={() => {
               alert();
             }}
           >
-            <span style={{ fontSize: 17, fontWeight: 100 }}>
-              Download for{" "}
-              <span style={{ fontWeight: "bold" }}>iOS</span>
-            </span>
+            <p style={{ fontSize: 17, fontWeight: 100 }}>
+              Download for <span style={{ fontWeight: "bold" }}>iOS</span>
+            </p>
           </DefaultButton>
           <DefaultButton
             onClick={() => {
@@ -64,13 +65,19 @@ function App() {
             }}
           >
             <p style={{ fontSize: 17, fontWeight: 100 }}>
-              Download for{" "}
-              <span style={{ fontWeight: "bold"}}>
-                Android
-              </span>
+              Download for <span style={{ fontWeight: "bold" }}>Android</span>
             </p>
           </DefaultButton>
         </div>
+      </div>
+      <div style={{ width: "50%", height: "100%", textAlign: "center" }}>
+        <img
+          src={mockup}
+          width="60%"
+          height="60%"
+          alt="mockup"
+          className={styles.image}
+        />
       </div>
     </div>
   );
