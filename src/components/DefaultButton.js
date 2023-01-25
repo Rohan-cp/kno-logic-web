@@ -11,12 +11,13 @@ const DefaultButton = (props) => {
         backgroundColor: bgColor,
         color: textColor,
         borderRadius: "25px",
-        borderWidth: 2,
+        borderWidth: 1.5,
         borderColor: borderColor,
         borderStyle: "solid",
         width: 208,
         height: 58,
         cursor: "pointer",
+        ...props.style
       }}
       onMouseEnter={() => {
         setBgColour("#6E44FF");

@@ -7,14 +7,14 @@ function App() {
   return (
     <div className={styles.container}>
       <div className={styles.leftContainer}>
-        <img className={styles.logo} src={logo} alt="Logo" />
+        <img className={styles.img} src={logo} alt="Logo" />
         <div className={styles.textContainer}>
           <p className={styles.text}>
             <span className={styles.title}>Kno-logic </span>
             delivers a daily digest of curated, diverse articles that makes it
             easier to stay a lifelong learner.
           </p>
-          <div className={styles.btnContainer}>
+          <div>
             <DefaultButton
               onClick={() => {
                 alert();
@@ -28,7 +28,7 @@ function App() {
               onClick={() => {
                 alert();
               }}
-              className={styles.rightBtn}
+              style={{ marginLeft: 90 }}
             >
               <p className={styles.buttonText}>
                 Download for <span style={{ fontWeight: "bold" }}>Android</span>
@@ -37,13 +37,15 @@ function App() {
           </div>
         </div>
       </div>
-      <img
+      <div className={styles.phoneImgContainer}>
+        <img
           src={mockup}
-          width="24%"
-          height="24%"
+          width="60%"
+          height="60%"
           alt="mockup"
           className={styles.image}
         />
+      </div>
     </div>
   );
 }

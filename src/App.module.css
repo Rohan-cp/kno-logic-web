@@ -1,27 +1,110 @@
+html {
+  height: 100%;
+}
+
 .container {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 
-.imgContainer {
-  width: "50%";
-  height: "100%";
+.leftContainer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
 }
 
-.buttonContainer {
+.textContainer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: left;
+  width: 523px;
+  padding-top: 0px;
+}
+
+.btnContainer {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.rightBtn {
+  margin-left: 90px;
 }
 
 .image {
-  flex-shrink: 0;
+  margin-left: 200px;
+  padding-top: 70px;
 }
 
-p {
-  font-size: 17;
+.text {
+  font-size: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-align: left;
+}
+
+.logo {
+  height: 117px;
+  width: 117px;
+}
+
+.image {
+  width: 22%;
+  height: 22%;
+}
+
+@media only screen and (max-width: 1100px) {
+  
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 17px;
+    flex-direction: column;
+    padding-top: 30%;
+  }
+  .text {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    text-align: left;
+  }
+  .textContainer {
+    width: 350px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .image {
+    padding-top: 40px;
+    margin-left: 0px;
+    width: 40%;
+    height: 40%;
+  }
+  .logo {
+    padding-top: 52%;
+    height: 87px;
+    width: 87px;
+  }
+}
+
+.rightBtn {
+  margin-top: 90px;
+}
+
+
+
+.buttonText {
+  font-size: 17px;
   font-weight: 100;
+}
+
+.phoneImgContainer {
+  width: 55%;
+  height: 100%;
+  text-align: center;
 }
